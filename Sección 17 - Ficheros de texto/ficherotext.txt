@@ -1,3 +1,0 @@
-Este es un fichero de ejemplo,
-que tiene 2 lineas 
-Esta es la tercera fila del fichero
