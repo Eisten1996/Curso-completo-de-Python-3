@@ -3,10 +3,9 @@ class Fichero(object):
         self.nombre = nombre
 
     def leer_fichero(self):
-        fichero = open(
-            self.nombre, 'rt')
-        dato_fichero = fichero.read()
-        print(dato_fichero)
+        fichero = open(self.nombre, 'rt')
+        texto = fichero.read()
+        return texto
 
     def grabar_fichero(self, texto):
         fichero = open(self.nombre, 'wt')
@@ -14,7 +13,6 @@ class Fichero(object):
         fichero.close()
 
     def incluir_fichero(self, texto):
-        fichero = open(
-            self.nombre, 'at')
+        fichero = open(self.nombre, 'at')
         fichero.write(texto)
         fichero.close()
